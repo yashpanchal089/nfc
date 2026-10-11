@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Manasi Polyclinic | Dr. N.D. Manasi Patani Kotak - Smart NFC Business Card</title>
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Manasi Polyclinic | Dr. N.D. Manasi Patani Kotak">
+  <meta name="description" content="Cleanse | Heal | Nourish | Rejuvenate. Naturopathy, Yogic Science, Cupping Therapy, Garbh Sanskar, Oncology Nutrition. 1-Click WhatsApp, Call & vCard Save.">
+  <meta name="theme-color" content="#064e3b">
+  
+  <!-- Open Graph / WhatsApp Preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Manasi Polyclinic - Dr. N.D. Manasi Patani Kotak">
+  <meta property="og:description" content="Naturopathy, Yogic Science & Holistic Healing. Cleanse | Heal | Nourish | Rejuvenate. Tap to connect & save contact.">
+  <meta property="og:image" content="assets/logo.png">
+
+  <!-- Apple Web App & PWA Support -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Manasi Polyclinic">
+  <link rel="apple-touch-icon" href="assets/logo.png">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Remix Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+  
+  <!-- Dynamic QR Code Generator Engine -->
+  <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Light Mesh Background -->
+  <div class="bg-mesh"></div>
+
+  <!-- Main Mobile-Friendly Viewport -->
+  <div class="app-viewport">
+    
+    <!-- Top Action Nav & Banner -->
+    <header class="card-header">
+      <div class="header-banner">
+        <div class="banner-overlay"></div>
+        <div class="banner-pattern"></div>
+        
+        <!-- NFC Active Pulse Chip -->
+        <div class="nfc-badge" title="Tap with any NFC-enabled smartphone">
+          <span class="nfc-pulse-dot"></span>
+          <span>NFC Ready</span>
+        </div>
+
+        <!-- Quick Share Icon Top Right -->
+        <button class="share-top-btn" id="headerShareBtn" title="Share Digital Card" aria-label="Share Digital Card">
+          <i class="ri-share-forward-line"></i>
+        </button>
+      </div>
+
+      <!-- Doctor & Clinic Profile Header -->
+      <div class="profile-section">
+        <div class="avatar-wrapper">
+          <img src="assets/logo.png" alt="Manasi Polyclinic Logo" class="profile-avatar" id="profileAvatar">
+          <span class="verified-badge" title="Certified Naturopathy Practitioner"><i class="ri-verified-badge-fill"></i></span>
+        </div>
+
+        <h1 class="clinic-title">
+          <span class="title-manasi">Manasi</span>
+          <span class="title-polyclinic">Polyclinic</span>
+        </h1>
+        
+        <h2 class="doctor-name">N.D. Manasi Patani Kotak</h2>
+        <p class="doctor-qualifications">B.Sc. (Micro) • Dip. Naturopathy &amp; Yogic Science</p>
+        <p class="doctor-designations">Naturopathy &amp; Yoga Trainer • Garbh Sanskar</p>
+
+        <!-- Specialization Badges -->
+        <div class="specialty-pills-row">
+          <span class="badge-pill green"><i class="ri-apple-line"></i> Nutrition &amp; Diet</span>
+          <span class="badge-pill gold"><i class="ri-shield-star-line"></i> Oncology Specialization</span>
+          <span class="badge-pill green"><i class="ri-hand-heart-line"></i> Divine Healing</span>
+        </div>
+
+        <!-- Motto Banner -->
+        <div class="motto-banner">
+          <span>Cleanse</span>
+          <span class="motto-dot">•</span>
+          <span>Heal</span>
+          <span class="motto-dot">•</span>
+          <span>Nourish</span>
+          <span class="motto-dot">•</span>
+          <span>Rejuvenate</span>
+        </div>
+
+        <!-- Tagline Quote Callout -->
+        <div class="tagline-quote-box">
+          <i class="ri-double-quotes-l"></i>
+          <span>If you think Health is costly, Try Illness.</span>
+        </div>
+
+        <!-- Rating & Trust Badge -->
+        <div class="trust-badge">
+          <div class="stars">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+          <span class="rating-text"><strong>5.0</strong> (65+ Patient Reviews)</span>
+        </div>
+
+        <!-- Quick Connect 5-Button Action Grid -->
+        <div class="quick-connect-grid">
+          <a href="tel:+919699885834" class="connect-action-btn call" id="btnCall" title="Call Clinic">
+            <div class="icon-box"><i class="ri-phone-fill"></i></div>
+            <span>Call</span>
+          </a>
+          <a href="https://wa.me/919699885834?text=Hello%20Dr.%20Manasi,%20I%20visited%20your%20Digital%20Card%20and%20would%20like%20to%20consult%20regarding%20Naturopathy%20%26%20Diet." target="_blank" class="connect-action-btn whatsapp" id="btnWhatsapp" title="WhatsApp Message">
+            <div class="icon-box"><i class="ri-whatsapp-fill"></i></div>
+            <span>WhatsApp</span>
+          </a>
+          <a href="mailto:manasipolyclinic@gmail.com" class="connect-action-btn email" id="btnEmail" title="Send Email">
+            <div class="icon-box"><i class="ri-mail-fill"></i></div>
+            <span>Email</span>
+          </a>
+          <a href="https://maps.app.goo.gl/r8CCBG9ZwiUzrN5m8" target="_blank" class="connect-action-btn directions" id="btnDirections" title="Clinic Location on Google Maps">
+            <div class="icon-box"><i class="ri-map-pin-2-fill"></i></div>
+            <span>Directions</span>
+          </a>
+          <a href="https://www.youtube.com/watch?v=oY32hOTGsQ0" target="_blank" class="connect-action-btn youtube" id="btnYoutube" title="Watch Videos on YouTube">
+            <div class="icon-box"><i class="ri-youtube-fill"></i></div>
+            <span>YouTube</span>
+          </a>
+        </div>
+
+        <!-- Big Primary CTA: Add to Phonebook (vCard) -->
+        <button class="btn-primary-vcard" id="btnDownloadVcard">
+          <i class="ri-user-add-line"></i>
+          <span>Save to Phonebook</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="card-tabs" id="cardTabs" aria-label="Card Navigation Tabs">
+      <button class="tab-btn active" data-tab="share-qr" aria-label="QR Code & Sharing">
+        <i class="ri-qr-code-line"></i>
+        <span>Share</span>
+      </button>
+      <button class="tab-btn" data-tab="about" aria-label="About Doctor & Clinic">
+        <i class="ri-user-star-line"></i>
+        <span>About</span>
+      </button>
+      <button class="tab-btn" data-tab="treatments" aria-label="Treatments & Therapies">
+        <i class="ri-leaf-line"></i>
+        <span>Treatments</span>
+      </button>
+      <button class="tab-btn" data-tab="ailments" aria-label="Ailments Treated">
+        <i class="ri-shield-cross-line"></i>
+        <span>Ailments</span>
+      </button>
+      <button class="tab-btn" data-tab="social" aria-label="Social & Video">
+        <i class="ri-share-line"></i>
+        <span>Social</span>
+      </button>
+      <button class="tab-btn" data-tab="reviews" aria-label="Reviews & Feedback">
+        <i class="ri-chat-smile-2-line"></i>
+        <span>Reviews</span>
+      </button>
+    </nav>
+
+    <!-- Tab Content Panels Container -->
+    <main class="tabs-container">
+      
+      <!-- ==========================================
+           TAB 1: SHARE & QR CODE
+           ========================================== -->
+      <section class="tab-panel active" id="tab-share-qr">
+        <div class="qr-showcase-card">
+          <div class="qr-header">
+            <span class="qr-tag"><i class="ri-scan-2-line"></i> Scan or Tap NFC</span>
+            <h3>Digital NFC Card QR Code</h3>
+            <p>Scan with any smartphone camera or tap your NFC card to instantly access and save this clinic profile.</p>
+          </div>
+
+          <!-- Dynamic QR Canvas Container -->
+          <div class="qr-box">
+            <div id="qrCanvasContainer">
+              <!-- Dynamically generated canvas injected by app.js -->
+            </div>
+            <div class="qr-badge">
+              <i class="ri-smartphone-line"></i> Works seamlessly on iPhone &amp; Android
+            </div>
+          </div>
+
+          <!-- QR Actions -->
+          <div class="qr-actions">
+            <button class="btn-secondary-action" id="btnDownloadQr">
+              <i class="ri-download-2-line"></i>
+              <span>Download QR</span>
+            </button>
+            <button class="btn-secondary-action" id="btnCopyCardLink">
+              <i class="ri-file-copy-line"></i>
+              <span>Copy Link</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Direct WhatsApp Share Input -->
+        <div class="whatsapp-share-card">
+          <div class="ws-header">
+            <i class="ri-whatsapp-fill ws-icon"></i>
+            <div>
+              <h4>Share Card via WhatsApp</h4>
+              <p>Forward this digital card directly to any phone number</p>
+            </div>
+          </div>
+          <form class="ws-form" id="whatsappShareForm">
+            <div class="input-with-country">
+              <span class="country-code">+91</span>
+              <input type="tel" id="targetWhatsAppNumber" placeholder="Enter 10-digit mobile number" pattern="[0-9]{10}" required maxlength="10">
+            </div>
+            <button type="submit" class="btn-send-whatsapp">
+              <i class="ri-send-plane-fill"></i> Send on WhatsApp
+            </button>
+          </form>
+        </div>
+
+        <!-- NFC & Offline Helper Box -->
+        <div class="nfc-instruction-box">
+          <i class="ri-broadcast-line"></i>
+          <div>
+            <h5>NFC Tap Feature</h5>
+            <p>Hold this NFC card against the back of any compatible smartphone to open automatically. If NFC is switched off, simply scan the QR code above.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           TAB 2: ABOUT DOCTOR & CLINIC
+           ========================================== -->
+      <section class="tab-panel" id="tab-about">
+        <!-- Holistic Bio -->
+        <div class="info-block">
+          <div class="block-title">
+            <i class="ri-stethoscope-line"></i>
+            <h3>About N.D. Manasi Patani Kotak</h3>
+          </div>
+          <p class="about-bio-text">
+            <strong>N.D. Manasi Patani Kotak</strong> is an experienced Naturopath, Yoga Trainer, and Clinical Nutritionist dedicated to drugless, natural, and root-cause healing. At <strong>Manasi Polyclinic</strong>, ancient naturopathic science meets evidence-based nutritional medicine to cleanse toxins, restore vitality, and stimulate the body's innate power to heal.
+          </p>
+          <p class="about-bio-text">
+            Specializing in <em>Garbh Sanskar, Pre-natal &amp; Post-natal yoga, Cupping Therapy, Oncology Nutrition</em>, and chronic illness management, she provides individualized wellness regimes designed to rejuvenate the body, mind, and spirit.
+          </p>
+
+          <!-- Qualifications List -->
+          <div class="qualification-grid">
+            <div class="qual-item">
+              <i class="ri-graduation-cap-line"></i>
+              <span>B.Sc. (Microbiology)</span>
+            </div>
+            <div class="qual-item">
+              <i class="ri-medal-line"></i>
+              <span>Diploma in Naturopathy &amp; Yogic Science (N.D.)</span>
+            </div>
+            <div class="qual-item">
+              <i class="ri-user-heart-line"></i>
+              <span>Certified Naturopathy &amp; Yoga Trainer</span>
+            </div>
+            <div class="qual-item">
+              <i class="ri-parent-line"></i>
+              <span>Garbh Sanskar &amp; Childbirth Educator</span>
+            </div>
+            <div class="qual-item">
+              <i class="ri-shield-star-line"></i>
+              <span>Oncology Nutrition Specialist</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Journey & Milestones Timeline -->
+        <div class="info-block">
+          <div class="block-title">
+            <i class="ri-history-line"></i>
+            <h3>Holistic Journey &amp; Milestones</h3>
+          </div>
+          <div class="journey-timeline">
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <span class="timeline-year">2018</span>
+              <div class="timeline-title">Garbh Sanskar &amp; Maternal Wellness</div>
+              <p class="timeline-desc">Pioneered conscious conception, prenatal bonding, and post-natal maternal rejuvenation.</p>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <span class="timeline-year">2019</span>
+              <div class="timeline-title">Cupping Therapy Certification &amp; Practice</div>
+              <p class="timeline-desc">Mastered dry, wet, and fire cupping for deep myofascial release, detox, and blood circulation.</p>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <span class="timeline-year">2025</span>
+              <div class="timeline-title">Advanced Naturopathy &amp; Therapeutic Diet</div>
+              <p class="timeline-desc">Comprehensive drugless protocols for metabolic, lifestyle, and digestive recovery.</p>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <span class="timeline-year">2025</span>
+              <div class="timeline-title">Oncology Nutrition Specialization</div>
+              <p class="timeline-desc">Tailored clinical dietary support to build cellular immunity during cancer care &amp; recovery.</p>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <span class="timeline-year">2026</span>
+              <div class="timeline-title">Kansa Therapy &amp; Divine Healing</div>
+              <p class="timeline-desc">Integration of Ayurvedic metal wand detox, chakra balancing, and restorative meditation.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Clinic Details & Hours -->
+        <div class="info-block">
+          <div class="block-title">
+            <i class="ri-building-line"></i>
+            <h3>Clinic Information &amp; Timings</h3>
+          </div>
+          <div class="detail-rows">
+            <div class="detail-row">
+              <span class="row-label"><i class="ri-time-line"></i> Timings:</span>
+              <span class="row-value">Monday to Saturday: By Prior Appointment</span>
+            </div>
+            <div class="detail-row">
+              <span class="row-label"><i class="ri-phone-line"></i> Contact:</span>
+              <span class="row-value"><a href="tel:+919699885834">+91 96998 85834</a></span>
+            </div>
+            <div class="detail-row">
+              <span class="row-label"><i class="ri-mail-line"></i> Email:</span>
+              <span class="row-value"><a href="mailto:manasipolyclinic@gmail.com">manasipolyclinic@gmail.com</a></span>
+            </div>
+            <div class="detail-row">
+              <span class="row-label"><i class="ri-map-pin-line"></i> Address:</span>
+              <span class="row-value">1A, Jessamine CHS Ltd, Holy Cross Rd, near Hcg Hospital, I C Colony, Kandarpada, Borivali West, Mumbai, Maharashtra 400103</span>
+            </div>
+          </div>
+
+          <!-- Quick Directions Box -->
+          <div class="map-action-card">
+            <div class="map-info">
+              <h4>Visit Us in Borivali West</h4>
+              <p>Near HCG Hospital, I C Colony</p>
+            </div>
+            <a href="https://maps.app.goo.gl/r8CCBG9ZwiUzrN5m8" target="_blank" class="btn-open-map">
+              <i class="ri-navigation-line"></i> Get Directions
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           TAB 3: TREATMENTS & THERAPIES
+           ========================================== -->
+      <section class="tab-panel" id="tab-treatments">
+        <div class="treatments-header">
+          <h3>Holistic Naturopathic Treatments</h3>
+          <p>Scientific, drugless therapies customized for your wellness</p>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-filter-box">
+          <i class="ri-search-line"></i>
+          <input type="text" id="treatmentSearchInput" placeholder="Search treatments (e.g., Cupping, Shirodhara, Garbh Sanskar)...">
+        </div>
+
+        <!-- Category Filter Pills -->
+        <div class="category-tags-row" id="treatmentFilterRow">
+          <button class="filter-tag-btn active" data-filter="all">All Treatments</button>
+          <button class="filter-tag-btn" data-filter="naturopathy">Naturopathy</button>
+          <button class="filter-tag-btn" data-filter="maternal">Maternal &amp; Child</button>
+          <button class="filter-tag-btn" data-filter="ayurveda">Ayurvedic Basti</button>
+          <button class="filter-tag-btn" data-filter="diet">Diet &amp; Nutrition</button>
+          <button class="filter-tag-btn" data-filter="alternative">Alternative Healing</button>
+        </div>
+
+        <!-- Treatments Injected List -->
+        <div class="treatments-grid" id="treatmentsList">
+          <!-- Populated by app.js -->
+        </div>
+      </section>
+
+      <!-- ==========================================
+           TAB 4: AILMENTS TREATED
+           ========================================== -->
+      <section class="tab-panel" id="tab-ailments">
+        <div class="ailments-header">
+          <h3>Ailments Treated Naturally</h3>
+          <p>Overcoming chronic diseases and lifestyle disorders from within</p>
+        </div>
+
+        <!-- Search Bar for Ailments -->
+        <div class="search-filter-box">
+          <i class="ri-search-line"></i>
+          <input type="text" id="ailmentSearchInput" placeholder="Search ailments (e.g., Migraine, Arthritis, Hairfall, BP)...">
+        </div>
+
+        <!-- Ailments Grid -->
+        <div class="ailments-grid" id="ailmentsGrid">
+          <!-- Populated by app.js -->
+        </div>
+
+        <!-- Consultation Callout -->
+        <div class="ailment-highlight-box">
+          <h4>Don't see your symptom listed?</h4>
+          <p>Naturopathy treats the individual, not just the disease. Get a personalized holistic assessment.</p>
+          <a href="https://wa.me/919699885834?text=Hello%20Dr.%20Manasi,%20I%20would%20like%20to%20discuss%20my%20health%20condition%20for%20a%20naturopathic%20treatment%20plan." target="_blank" class="btn-ailment-consult">
+            <i class="ri-whatsapp-line"></i> Consult on WhatsApp
+          </a>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           TAB 5: SOCIAL & MEDIA CHANNELS
+           ========================================== -->
+      <section class="tab-panel" id="tab-social">
+        <div class="social-panel-header">
+          <h3>Connect with Manasi Polyclinic</h3>
+          <p>Explore videos, wellness tips, updates, and direct booking</p>
+        </div>
+
+        <div class="social-links-grid">
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/manasi_polyclinic_" target="_blank" class="social-tile instagram">
+            <div class="social-icon"><i class="ri-instagram-line"></i></div>
+            <div class="social-meta">
+              <span class="platform">Instagram</span>
+              <span class="handle">@manasi_polyclinic_</span>
+            </div>
+            <i class="ri-arrow-right-up-line arrow"></i>
+          </a>
+
+          <!-- YouTube -->
+          <a href="https://www.youtube.com/watch?v=oY32hOTGsQ0" target="_blank" class="social-tile youtube">
+            <div class="social-icon"><i class="ri-youtube-line"></i></div>
+            <div class="social-meta">
+              <span class="platform">YouTube Channel</span>
+              <span class="handle">Watch Holistic Health Videos</span>
+            </div>
+            <i class="ri-arrow-right-up-line arrow"></i>
+          </a>
+
+          <!-- WhatsApp Direct -->
+          <a href="https://wa.me/919699885834?text=Hello%20Dr.%20Manasi,%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" class="social-tile whatsapp">
+            <div class="social-icon"><i class="ri-whatsapp-line"></i></div>
+            <div class="social-meta">
+              <span class="platform">WhatsApp Consultation</span>
+              <span class="handle">+91 96998 85834</span>
+            </div>
+            <i class="ri-arrow-right-up-line arrow"></i>
+          </a>
+
+          <!-- Google Maps Location -->
+          <a href="https://maps.app.goo.gl/r8CCBG9ZwiUzrN5m8" target="_blank" class="social-tile maps">
+            <div class="social-icon"><i class="ri-map-pin-line"></i></div>
+            <div class="social-meta">
+              <span class="platform">Google Maps Location</span>
+              <span class="handle">I C Colony, Borivali West, Mumbai</span>
+            </div>
+            <i class="ri-arrow-right-up-line arrow"></i>
+          </a>
+
+          <!-- Email -->
+          <a href="mailto:manasipolyclinic@gmail.com" class="social-tile email">
+            <div class="social-icon"><i class="ri-mail-line"></i></div>
+            <div class="social-meta">
+              <span class="platform">Official Email</span>
+              <span class="handle">manasipolyclinic@gmail.com</span>
+            </div>
+            <i class="ri-arrow-right-up-line arrow"></i>
+          </a>
+        </div>
+
+        <!-- Featured YouTube Video Feature -->
+        <div class="video-feature-box">
+          <div class="video-feature-head">
+            <i class="ri-youtube-fill"></i>
+            <h4>Featured Health &amp; Naturopathy Video</h4>
+          </div>
+          <div class="video-iframe-wrap">
+            <iframe 
+              src="https://www.youtube-nocookie.com/embed/oY32hOTGsQ0" 
+              title="Manasi Polyclinic - Health &amp; Naturopathy Guide" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           TAB 6: REVIEWS & TESTIMONIALS
+           ========================================== -->
+      <section class="tab-panel" id="tab-reviews">
+        <div class="reviews-header">
+          <div class="review-stats">
+            <h2>5.0</h2>
+            <div class="stars">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+            </div>
+            <span>Based on 65+ Patient Reviews</span>
+          </div>
+
+          <button class="btn-write-review" id="btnOpenReviewModal">
+            <i class="ri-edit-2-line"></i> Share Review
+          </button>
+        </div>
+
+        <div class="reviews-list" id="testimonialsList">
+          <!-- Populated by app.js -->
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Viral Client Magnet Banner (Agency Lead Magnet) -->
+    <div class="viral-agency-banner">
+      <div class="agency-content">
+        <i class="ri-sparkling-fill"></i>
+        <div>
+          <h4>Want a Smart NFC Card for your Clinic?</h4>
+          <p>Developed by Mahant Software</p>
+        </div>
+      </div>
+      <a href="https://card.mahantsoftware.com/" target="_blank" class="btn-get-card">
+        View Mahant Card <i class="ri-arrow-right-line"></i>
+      </a>
+    </div>
+
+    <!-- Sticky Bottom Action Bar -->
+    <footer class="bottom-action-bar">
+      <button class="bar-btn secondary" id="bottomShareBtn">
+        <i class="ri-share-forward-line"></i>
+        <span>Share Card</span>
+      </button>
+      <button class="bar-btn primary" id="bottomSaveBtn">
+        <i class="ri-user-add-line"></i>
+        <span>Save Contact</span>
+      </button>
+    </footer>
+
+  </div>
+
+  <!-- Review Modal Popup -->
+  <div class="modal-backdrop" id="reviewModal">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3>Share Your Healing Experience</h3>
+        <button class="close-modal" id="closeReviewModal" aria-label="Close modal">&times;</button>
+      </div>
+      <form id="reviewForm">
+        <div class="form-group">
+          <label for="reviewName">Your Full Name</label>
+          <input type="text" id="reviewName" placeholder="e.g. Priyanshu Shah" required>
+        </div>
+        <div class="form-group">
+          <label for="reviewTreatment">Treatment / Therapy Received</label>
+          <input type="text" id="reviewTreatment" placeholder="e.g. Garbh Sanskar / Cupping / Diet" required>
+        </div>
+        <div class="form-group">
+          <label>Your Rating</label>
+          <div class="star-rating-select" id="starRatingSelect">
+            <i class="ri-star-fill active" data-rating="1"></i>
+            <i class="ri-star-fill active" data-rating="2"></i>
+            <i class="ri-star-fill active" data-rating="3"></i>
+            <i class="ri-star-fill active" data-rating="4"></i>
+            <i class="ri-star-fill active" data-rating="5"></i>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="reviewFeedback">Your Feedback</label>
+          <textarea id="reviewFeedback" rows="3" placeholder="Share how your health or pregnancy was supported at Manasi Polyclinic..." required></textarea>
+        </div>
+        <button type="submit" class="btn-submit-review">Submit Feedback</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification Popover -->
+  <div class="toast-notice" id="toastNotice">
+    <i class="ri-checkbox-circle-fill"></i>
+    <span id="toastMessage">Action completed successfully</span>
+  </div>
+
+  <!-- App Logic Engine -->
+  <script src="app.js"></script>
+</body>
+</html>

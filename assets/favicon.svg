@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="favLeaf" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#15803d"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+    <linearGradient id="favBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f0fdf4"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="30" fill="url(#favBg)" stroke="#bbf7d0" stroke-width="4"/>
+  <circle cx="60" cy="60" r="50" fill="none" stroke="#22c55e" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.4"/>
+  <!-- Lotus Icon -->
+  <g transform="translate(60, 60) scale(0.68) translate(-60, -60)">
+    <path d="M 60,18 C 55,42 42,66 60,88 C 78,66 65,42 60,18 Z" fill="url(#favLeaf)"/>
+    <path d="M 57,36 C 40,50 24,70 44,90 C 53,72 55,54 57,36 Z" fill="#16a34a"/>
+    <path d="M 63,36 C 80,50 96,70 76,90 C 67,72 65,54 63,36 Z" fill="#16a34a"/>
+    <path d="M 48,60 C 20,68 6,94 32,106 C 44,92 48,78 48,60 Z" fill="#15803d" opacity="0.9"/>
+    <path d="M 72,60 C 100,68 114,94 88,106 C 76,92 72,78 72,60 Z" fill="#15803d" opacity="0.9"/>
+    <circle cx="60" cy="58" r="5" fill="#f59e0b"/>
+  </g>
+</svg>

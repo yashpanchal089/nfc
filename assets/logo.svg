@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="leafGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#15803d"/>
+      <stop offset="50%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#86efac"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0fdf4"/>
+      <stop offset="100%" stop-color="#e2f7e8"/>
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#166534" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Background Circle with Soft Border -->
+  <circle cx="250" cy="250" r="236" fill="url(#bgGrad)" stroke="#bbf7d0" stroke-width="6"/>
+  <circle cx="250" cy="250" r="226" fill="none" stroke="#22c55e" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.6"/>
+
+  <!-- Sun Rays / Divine Healing Halo -->
+  <g opacity="0.45" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round">
+    <line x1="250" y1="65" x2="250" y2="82"/>
+    <line x1="250" y1="210" x2="250" y2="225"/>
+    <line x1="175" y1="96" x2="187" y2="108"/>
+    <line x1="325" y1="96" x2="313" y2="108"/>
+    <line x1="144" y1="148" x2="160" y2="155"/>
+    <line x1="356" y1="148" x2="340" y2="155"/>
+  </g>
+
+  <!-- Central Lotus & Healing Hands Motif -->
+  <g filter="url(#softGlow)" transform="translate(0, -10)">
+    <!-- Central Lotus Petal -->
+    <path d="M 250,95 C 240,140 220,185 250,230 C 280,185 260,140 250,95 Z" fill="url(#leafGrad)"/>
+    
+    <!-- Left Inner Petal -->
+    <path d="M 245,130 C 215,155 185,190 220,230 C 235,195 240,160 245,130 Z" fill="#16a34a" opacity="0.95"/>
+    <!-- Right Inner Petal -->
+    <path d="M 255,130 C 285,155 315,190 280,230 C 265,195 260,160 255,130 Z" fill="#16a34a" opacity="0.95"/>
+
+    <!-- Left Outer Leaf -->
+    <path d="M 230,170 C 180,180 150,225 195,250 C 215,225 225,200 230,170 Z" fill="#15803d" opacity="0.85"/>
+    <!-- Right Outer Leaf -->
+    <path d="M 270,170 C 320,180 350,225 305,250 C 285,225 275,200 270,170 Z" fill="#15803d" opacity="0.85"/>
+
+    <!-- Calyx / Base Lotus Foundation -->
+    <path d="M 195,250 C 220,270 280,270 305,250 C 290,265 210,265 195,250 Z" fill="url(#goldGrad)"/>
+
+    <!-- Golden Prana / Pearl of Life Drop -->
+    <circle cx="250" cy="180" r="10" fill="url(#goldGrad)"/>
+    <circle cx="250" cy="180" r="4" fill="#ffffff" opacity="0.8"/>
+  </g>
+
+  <!-- Typography: MANASI -->
+  <text x="250" y="325" font-family="'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif" font-size="44" font-weight="800" fill="#14532d" text-anchor="middle" letter-spacing="4">
+    MANASI
+  </text>
+  
+  <!-- Typography: POLYCLINIC -->
+  <text x="250" y="365" font-family="'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif" font-size="24" font-weight="700" fill="#16a34a" text-anchor="middle" letter-spacing="8">
+    POLYCLINIC
+  </text>
+
+  <!-- Golden Divider -->
+  <path d="M 160 385 Q 250 395 340 385" stroke="url(#goldGrad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Sub-tagline: Cleanse • Heal • Nourish • Rejuvenate -->
+  <text x="250" y="420" font-family="'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="600" fill="#3f6212" text-anchor="middle" letter-spacing="3.2">
+    CLEANSE • HEAL • NOURISH • REJUVENATE
+  </text>
+  
+  <!-- Naturopathy & Yogic Science text arc / sub -->
+  <text x="250" y="445" font-family="'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#854d0e" text-anchor="middle" letter-spacing="1.5">
+    NATUROPATHY &amp; YOGIC SCIENCE
+  </text>
+</svg>
