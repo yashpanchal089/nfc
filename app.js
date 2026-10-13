@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
       {
         id: "diet-fasting",
         category: "diet",
-        name: "Therapeutic Diet & Fasting Therapy",
+        name: "Therapeutic Diet",
         icon: "ri-restaurant-line",
         desc: "Customized elimination diets, intermittent fasting guidance, and alkaline nutrition for diabetes, blood pressure, and metabolic harmony.",
         badge: "Clinical Diet"
